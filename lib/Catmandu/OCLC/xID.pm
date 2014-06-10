@@ -19,10 +19,10 @@ sub query {
     	$endpoint = 'http://xisbn.worldcat.org/webservices/xid/isbn'; 
     }
     elsif ($type eq 'xissn') {
-    	$endpoint = 'http://xissn.worldcat.org/webservices/xid/issn';
+    	$endpoint = 'http://xisbn.worldcat.org/webservices/xid/issn';
     }
     elsif ($type eq 'xstandardNumber') {
-   		$endpoint = 'http://xstandardNumber.worldcat.org/webservices/xid/oclcnum';
+   		$endpoint = 'http://xisbn.worldcat.org/webservices/xid/oclcnum';
     }
     else {
     	$endpoint = 'http://xisbn.worldcat.org/webservices/xid/isbn';
@@ -32,7 +32,7 @@ sub query {
                             , $endpoint
                             , uri_escape($query)
                             , $method;
-
+                            
     my $response = get($request);
     my $json     = JSON->new->utf8(0);
 
