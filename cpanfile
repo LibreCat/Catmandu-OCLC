@@ -6,6 +6,7 @@ on 'test', sub {
 };
 
 requires 'Catmandu', '0.9202';
+requires 'REST::Client', '271';
 requires 'LWP::Simple', '6.00';
 requires 'URI::Escape', '1.60';
 requires 'Moo', '1.0';

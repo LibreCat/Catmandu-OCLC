@@ -91,7 +91,7 @@ Access of 1000 queries/day is available to anyone.
 
 =head1 SEE ALSO
 
-L<Catmandu::Fix>, L<Catmandu::MARC>x
+L<Catmandu::Fix>, L<Catmandu::MARC>
 
 =cut
 
