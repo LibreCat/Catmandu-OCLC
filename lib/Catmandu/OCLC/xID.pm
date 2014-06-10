@@ -3,13 +3,14 @@ package Catmandu::OCLC::xID;
 use LWP::Simple;
 use URI::Escape;
 use JSON;
+use Data::Dumper;
 
-sub xid_service {
+sub query {
     my $query   = shift;
     my $type    = shift;
     my $method  = shift;
 
-    die "usage: xid_service(query,type,method)" unless defined $query && 
+    die "usage: query(query,type,method)" unless defined $query && 
                                                        defined $type &&
                                                        defined $method;
     my $endpoint;

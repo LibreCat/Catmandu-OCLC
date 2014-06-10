@@ -8,22 +8,27 @@ use Catmandu::Fix::Has;
 
 with 'Catmandu::Fix::Base';
 
-has id      => (fix_arg => 1);
+has path    => (fix_arg => 1);
 has type    => (fix_arg => 1);
 has method  => (fix_arg => 1);
 
-sub fix {
-	my ($self,$data) = @_;
-	my $id       = $self->id;
-	my $type     = $self->type;
-	my $method   = $self->method;
-	my $value    = $data->{$id};
+sub emit {
+    my ($self, $fixer) = @_;
+    my $path    = $fixer->split_path($self->path);
+    my $key     = pop @$path;
+    my $type    = $self->type;
+    my $method  = $self->method;
 
-	if (is_string($value)) {
-		$data->{$id} = Catmandu::OCLC::xID::xid_service($value,$type,$method);
-	}
-
-	$data;
+    $fixer->emit_walk_path($fixer->var, $path, sub {
+        my $var = shift;
+        $fixer->emit_get_key($var, $key, sub {
+            my $var = shift;
+            "if (is_value(${var})) {"
+                ."use Catmandu::OCLC::xID;"
+                ."${var} = Catmandu::OCLC::xID::query(${var},'$type','$method');"
+                ."}";
+        });
+    });
 }
 
 =head1 NAME
