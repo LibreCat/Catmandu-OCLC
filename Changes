@@ -2,5 +2,8 @@ Revision history for Catmandu-OCLC
 
 {{$NEXT}}
 
+0.002  2014-06-10 14:06:41 BST
+    - Adding tests and documentation
+
 0.001  2014-06-10 14:00:00 CEST
     - Initial version
