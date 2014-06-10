@@ -22,4 +22,4 @@ $fixer  = Catmandu::Fix->new(fixes => ['xID(my.test,xstandardNumber,getVariants)
 $record = $fixer->fix({ 'my' => { 'test' => '154684429'} }); 
 is $record->{my}->{test}->{stat} , 'ok' , 'getVariants';
 
-done_testing 4;
+done_testing 3;
