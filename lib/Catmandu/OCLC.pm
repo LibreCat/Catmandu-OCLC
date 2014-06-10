@@ -19,6 +19,8 @@ our $VERSION = '0.003';
 
 =item * L<Catmandu::Fix::xID>
 
+=item * L<Catmandu::Fix::viaf_read>
+
 =back
 
 =head1 DESCRIPTION
