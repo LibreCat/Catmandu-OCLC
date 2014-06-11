@@ -2,6 +2,9 @@ Revision history for Catmandu-OCLC
 
 {{$NEXT}}
 
+0.004  2014-06-11 06:33:12 BST
+    - Updating pod
+    
 0.003  2014-06-10 15:36:27 BST
     - Adding viaf_read fix
    

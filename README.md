@@ -10,6 +10,7 @@ Catmandu::OCLC - Catmandu modules for working with OCLC web services
 # MODULES
 
 - [Catmandu::Fix::xID](https://metacpan.org/pod/Catmandu::Fix::xID)
+- [Catmandu::Fix::viaf\_read](https://metacpan.org/pod/Catmandu::Fix::viaf_read)
 
 # DESCRIPTION
 
