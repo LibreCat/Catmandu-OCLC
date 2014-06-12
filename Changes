@@ -1,7 +1,8 @@
 Revision history for Catmandu-OCLC
 
 {{$NEXT}}
-
+    - Fixing binmode issue in OCLC VIAF service
+    
 0.004  2014-06-11 06:33:12 BST
     - Updating pod
     

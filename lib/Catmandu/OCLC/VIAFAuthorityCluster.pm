@@ -22,7 +22,6 @@ sub read {
 
 	my $fh;
 	open($fh, '<', \$content);
-	binmode($rh,':utf8');
 
 	my $importer   = Catmandu->importer(MARC, type=>'XML' , fh => $fh);
 
