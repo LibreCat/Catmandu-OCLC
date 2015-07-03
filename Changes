@@ -1,6 +1,8 @@
 Revision history for Catmandu-OCLC
 
 {{$NEXT}}
+
+0.006  2015-07-03 15:48:07 CEST
     - Fixing Catmandu::MARC dependency bug
     - Fixing JSON dependency bug
     

@@ -18,7 +18,7 @@ my %module_build_args = (
     "Patrick Hochstenbach, C<< <patrick.hochstenbach at ugent.be> >>"
   ],
   "dist_name" => "Catmandu-OCLC",
-  "dist_version" => "0.005",
+  "dist_version" => "0.006",
   "license" => "perl",
   "module_name" => "Catmandu::OCLC",
   "recommends" => {},
@@ -26,6 +26,7 @@ my %module_build_args = (
   "requires" => {
     "Catmandu" => 0,
     "Catmandu::Importer::MARC" => 0,
+    "JSON" => 0,
     "LWP::Simple" => 0,
     "Moo" => "1.0",
     "REST::Client" => 0,

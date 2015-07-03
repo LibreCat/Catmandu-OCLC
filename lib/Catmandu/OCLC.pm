@@ -15,7 +15,7 @@ Catmandu::OCLC - Catmandu modules for working with OCLC web services
 
 =cut
 
-our $VERSION = '0.005';
+our $VERSION = '0.006';
 
 =head1 SYNOPSIS
 
