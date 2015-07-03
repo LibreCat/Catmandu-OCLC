@@ -8,19 +8,15 @@ perl:
 
 env: PERL_CPANM_OPT="--notest --force --skip-satisfied"
 
-# fix https://github.com/miyagawa/cpanminus/issues/412    
-before_install:
-    - cpanm -nq Pod::Readme
-
 install:
-    - cpanm --quiet --notest --skip-satisfied Dist::Milla
-    - cpanm --installdeps .
+    - cpanm --quiet --installdeps --notest --force --skip-satisfied .
+    - cpanm --quiet --notest --skip-satisfied Devel::Cover
 
 # full release test
 script:
-    - milla smoke --release --author
+    - perl Build.PL && ./Build build && cover -test
 
 # normal tests and report test coverage to coveralls.io
 after_success:
     - cpanm --quiet --notest --skip-satisfied Devel::Cover::Report::Coveralls
-    - perl Build.PL && ./Build build && cover -test -report coveralls
+    - cover -report coveralls
