@@ -54,13 +54,11 @@ L<Catmandu::Store>
 
 Patrick Hochstenbach, C<< <patrick.hochstenbach at ugent.be> >>
 
-=head1 LICENSE AND COPYRIGHT
+=head1 COPYRIGHT
 
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
-
-See http://dev.perl.org/licenses/ for more information.
+This software is copyright (c) 2015 by Patrick Hochstenbach.
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
 
