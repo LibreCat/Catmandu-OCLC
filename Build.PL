@@ -24,11 +24,12 @@ my %module_build_args = (
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
-    "Catmandu" => "0.9202",
-    "LWP::Simple" => "6.00",
+    "Catmandu" => 0,
+    "Catmandu::Importer::MARC" => 0,
+    "LWP::Simple" => 0,
     "Moo" => "1.0",
-    "REST::Client" => 271,
-    "URI::Escape" => "1.60",
+    "REST::Client" => 0,
+    "URI::Escape" => 0,
     "perl" => "v5.10.1"
   },
   "script_files" => [],

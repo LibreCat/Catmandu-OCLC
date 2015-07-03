@@ -36,7 +36,15 @@ sub query {
     my $response = get($request);
     my $json     = JSON->new->utf8(0);
 
-    $json->decode($response);
+    my $perl;
+    eval {
+        $perl = $json->decode($response);
+    };
+    if ($@) {
+        $perl = { error => $@ };
+    }
+
+    $perl;
 }
 
 1;
