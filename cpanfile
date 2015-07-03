@@ -5,6 +5,7 @@ on 'test', sub {
   requires 'Test::More', '1.001003';
 };
 
+requires 'JSON',0;
 requires 'Catmandu', 0;
 requires 'Catmandu::Importer::MARC', 0;
 requires 'REST::Client', 0;
