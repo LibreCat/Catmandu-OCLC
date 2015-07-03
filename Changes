@@ -1,7 +1,8 @@
 Revision history for Catmandu-OCLC
 
 {{$NEXT}}
-
+    - Fixing Catmandu::MARC dependency bug
+    
 0.005  2014-06-12 06:50:54 BST
     - Fixing binmode issue in OCLC VIAF service
     

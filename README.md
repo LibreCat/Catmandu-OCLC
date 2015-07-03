@@ -39,10 +39,8 @@ processing at [https://github.com/LibreCat/Catmandu/wiki](https://github.com/Lib
 
 Patrick Hochstenbach, `<patrick.hochstenbach at ugent.be>`
 
-# LICENSE AND COPYRIGHT
+# COPYRIGHT
 
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
-
-See http://dev.perl.org/licenses/ for more information.
+This software is copyright (c) 2015 by Patrick Hochstenbach.
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.

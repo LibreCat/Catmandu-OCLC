@@ -1,5 +1,6 @@
 /Catmandu-OCLC-*
 /.build
 !META.json
-LICENSE
 META.json
+cpanfile.snapshot
+local
