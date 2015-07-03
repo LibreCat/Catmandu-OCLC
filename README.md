@@ -2,6 +2,11 @@
 
 Catmandu::OCLC - Catmandu modules for working with OCLC web services
 
+# STATUS
+[![Build Status](https://travis-ci.org/LibreCat/Catmandu-OCLC.svg)](https://travis-ci.org/LibreCat/Catmandu-OCLC)
+[![Coverage Status](https://coveralls.io/repos/LibreCat/Catmandu-OCLC/badge.svg)](https://coveralls.io/r/LibreCat/Catmandu-OCLC)
+[![Kwalitee Score](http://cpants.cpanauthors.org/dist/Catmandu-OCLC.png)](http://cpants.cpanauthors.org/dist/Catmandu-OCLC)
+
 # SYNOPSIS
 
     marc_map('020a','my.isbn')
