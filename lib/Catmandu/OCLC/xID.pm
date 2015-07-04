@@ -2,8 +2,7 @@ package Catmandu::OCLC::xID;
 
 use LWP::Simple;
 use URI::Escape;
-use JSON;
-use Data::Dumper;
+use JSON::MaybeXS;
 
 sub query {
     my $query   = shift;
@@ -34,7 +33,7 @@ sub query {
                             , $method;
                             
     my $response = get($request);
-    my $json     = JSON->new->utf8(0);
+    my $json     = JSON::MaybeXS->new->utf8(0);
 
     my $perl;
     eval {

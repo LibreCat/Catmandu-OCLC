@@ -1,7 +1,9 @@
 Revision history for Catmandu-OCLC
 
 {{$NEXT}}
-
+    - Change to JSON::MaybeXS support
+    - Deleted Data::Dumper dependency
+    
 0.006  2015-07-03 15:48:07 CEST
     - Fixing Catmandu::MARC dependency bug
     - Fixing JSON dependency bug
