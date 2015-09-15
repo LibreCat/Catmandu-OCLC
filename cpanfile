@@ -7,7 +7,7 @@ on 'test', sub {
 
 requires 'JSON::MaybeXS',0;
 requires 'Catmandu', 0;
-requires 'Catmandu::Importer::MARC', 0;
+requires 'Catmandu::MARC', 0;
 requires 'REST::Client', 0;
 requires 'LWP::Simple', 0;
 requires 'URI::Escape', 0;
