@@ -9,8 +9,13 @@ Catmandu::OCLC - Catmandu modules for working with OCLC web services
 
 # SYNOPSIS
 
-    marc_map('020a','my.isbn')
-    xID('my.isbn','xisbn','getMetadata')
+    add_field('number','102333412');
+    do
+       maybe();
+       viaf_read('number');
+       marc_map('700','author.$append')
+       remove_field(record)
+    end
 
 # MODULES
 
@@ -19,13 +24,13 @@ Catmandu::OCLC - Catmandu modules for working with OCLC web services
 
 # DESCRIPTION
 
-With Catmandu, LibreCat tools abstract digital library and research services as data 
-warehouse processes. As stores we reuse MongoDB or ElasticSearch providing us with 
-developer friendly APIs. Catmandu works with international library standards such as 
-MARC, MODS and Dublin Core, protocols such as OAI-PMH, SRU and open repositories such 
+With Catmandu, LibreCat tools abstract digital library and research services as data
+warehouse processes. As stores we reuse MongoDB or ElasticSearch providing us with
+developer friendly APIs. Catmandu works with international library standards such as
+MARC, MODS and Dublin Core, protocols such as OAI-PMH, SRU and open repositories such
 as DSpace and Fedora. And, of course, we speak the evolving Semantic Web.
 
-Follow us on [http://librecat.org](http://librecat.org) and read an introduction into Catmandu data 
+Follow us on [http://librecat.org](http://librecat.org) and read an introduction into Catmandu data
 processing at [https://github.com/LibreCat/Catmandu/wiki](https://github.com/LibreCat/Catmandu/wiki).
 
 # SEE ALSO
