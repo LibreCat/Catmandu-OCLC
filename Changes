@@ -1,6 +1,8 @@
 Revision history for Catmandu-OCLC
 
 {{$NEXT}}
+
+0.007  2018-10-28 13:29:51 CET
     - OCLC stopped support for xID services on 2018-08-23
     - Change to JSON::MaybeXS support
     - Deleted Data::Dumper dependency

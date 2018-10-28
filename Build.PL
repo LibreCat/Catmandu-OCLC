@@ -18,7 +18,7 @@ my %module_build_args = (
     "Patrick Hochstenbach, C<< <patrick.hochstenbach at ugent.be> >>"
   ],
   "dist_name" => "Catmandu-OCLC",
-  "dist_version" => "0.006",
+  "dist_version" => "0.007",
   "license" => "perl",
   "module_name" => "Catmandu::OCLC",
   "recursive_test_files" => 1,
